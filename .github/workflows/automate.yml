@@ -2,9 +2,9 @@ name: Go
 
 on:
   push:
-    branches: [ master ]
+    branches: [ justsiahere-patch-1 ]
   pull_request:
-    branches: [ master ]
+    branches: [ justsiahere-patch-1 ]
   schedule:
     - cron:  '0 2 * * *'
   workflow_dispatch:
