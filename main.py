@@ -139,6 +139,7 @@ class Zlapp(Fudan):
         检查
         """
         print("◉检测是否已提交")
+        self.session.keep_alive = False
         get_info = self.session.get(
             'https://zlapp.fudan.edu.cn/ncov/wap/fudan/get-info')
         last_info = get_info.json()
